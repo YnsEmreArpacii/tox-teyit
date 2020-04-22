@@ -137,7 +137,7 @@ client.on("guildMemberAdd", async (member) => {
 
 
     if (ktarih < 2592000001) {
-    
+    member.addRole(role)
         let giriscikiskanalID = giriscikis[member.guild.id].kanal;
     let giriscikiskanali = client.guilds.get(member.guild.id).channels.get(giriscikiskanalID);
     
@@ -166,6 +166,7 @@ client.on("guildMemberAdd", async (member) => {
     giriscikiskanali.send(embed)
     
     }else{
+	    member.addRole(role)
           let giriscikiskanalID = giriscikis[member.guild.id].kanal;
     let giriscikiskanali = client.guilds.get(member.guild.id).channels.get(giriscikiskanalID);
     
