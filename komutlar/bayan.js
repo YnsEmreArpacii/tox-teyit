@@ -8,10 +8,10 @@ exports.run = async(client, message, args, ops) => {
             .then(m => m.delete(5000));
     }  
     let toverify = message.guild.member(message.mentions.users.first());
-    let verifyrole = message.guild.roles.find(`name`, "♀ Woman");
+    let verifyrole = message.guild.roles.find(`name`, "Ꮦ I  ♀");
     let verifyrolee = message.guild.roles.find(`name`, "Ꮦ I Unregister");
-    if(toverify.roles.find(`name`, "♂ Man")) return message.channel.send('Teyit Başarısız, Kullanıcı Zaten Kayıtlı.')
-    if(toverify.roles.find(`name`, "♀ Woman")) return message.channel.send('Teyit Başarısız, Kullanıcı Zaten Kayıtlı.')
+    if(toverify.roles.find(`name`, "Ꮦ I  ♂")) return message.channel.send('Teyit Başarısız, Kullanıcı Zaten Kayıtlı.')
+    if(toverify.roles.find(`name`, "Ꮦ I  ♀")) return message.channel.send('Teyit Başarısız, Kullanıcı Zaten Kayıtlı.')
     if (!verifyrole) return message.reply("Rol Bulunamadı Lütfen 'Lianslı' Adıyla Rol Oluşturunuz.");
     if (!verifyrolee) return message.reply("Rol Bulunamadı Lütfen 'Lianslı' Adıyla Rol Oluşturunuz.");
     if (!toverify) return message.reply("Bir kullanıcıdan bahsetmelisin.");
