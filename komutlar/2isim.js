@@ -18,7 +18,7 @@ exports.run = async(client, message, args) => {
   
   if(yas<9) return message.reply("En az 9 yaşını doldurmuş olması gerekli.")
   if(yas>50) return message.reply("En Fazla 50 Yaşında Olmalı. Emekli Olmuş Dayı Galiba xD")
-  return member.guild.member(member).setNickname("☭ "+isim+" "+iisim+" | "+yas+"").catch(err => ("İsmin ayarlanırken bir hata oluştu.!"))
+  return member.guild.member(member).setNickname("Ꮦ "+isim+" "+iisim+" | "+yas+"").catch(err => ("İsmin ayarlanırken bir hata oluştu.!"))
   message.reply("Başarıyla Teyit Edildi.")
 };
 
