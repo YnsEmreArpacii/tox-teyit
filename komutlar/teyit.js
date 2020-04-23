@@ -6,8 +6,8 @@ const snekfetch = require("snekfetch");
 
 exports.run = async (client, message, args) => {
       message.delete()
-    if (!message.member.roles.find("name", "ᕒ ᴛᴇʏɪᴛ ᓬ")) {
-        return message.channel.send(' **Bu Komutu Kullanmak için** \*`ᕒ ᴛᴇʏɪᴛ ᓬ*\` **Rolüne Sahip Olman Lazım** ')
+    if (!message.member.roles.find("name", "Ꮦ I  ᴛᴇʏɪᴛ")) {
+        return message.channel.send(' **Bu Komutu Kullanmak için** \*`Ꮦ I  ᴛᴇʏɪᴛ*\` **Rolüne Sahip Olman Lazım** ')
             .then(m => m.delete(5000));
     }
   
